@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Bespoke websites, business-card designs and beautifully decorated cakes with a fast turnaround."
+    >
+
+    <title>Your Brand | Websites, Business Cards & Cakes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home" aria-label="Go to homepage">
+                <span class="brand-mark">YB</span>
+
+                <span class="brand-text">
+                    <strong>Your Brand</strong>
+                    <small>Creative services</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="mainNavigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-navigation" id="mainNavigation">
+                <a href="#services">Services</a>
+                <a href="#portfolio">My work</a>
+                <a href="#process">How it works</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">Creative ideas brought to life</p>
+
+                    <h1>
+                        Websites, business cards and cakes
+                        <span>made especially for you.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I help individuals and businesses bring their ideas to
+                        life through bespoke website development, personalised
+                        business-card design and beautifully decorated cakes.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#services">
+                            Explore my services
+                        </a>
+
+                        <a class="button button-secondary" href="#contact">
+                            Contact me
+                        </a>
+                    </div>
+
+                    <ul class="hero-benefits" aria-label="Business benefits">
+                        <li>Fast turnaround</li>
+                        <li>Personalised service</li>
+                        <li>Made to your requirements</li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="visual-card visual-card-main">
+                        <span class="visual-icon">✦</span>
+                        <p>Your idea</p>
+                        <strong>Designed with care</strong>
+                    </div>
+
+                    <div class="visual-card visual-card-small card-web">
+                        <span>⌨</span>
+                        Websites
+                    </div>
+
+                    <div class="visual-card visual-card-small card-print">
+                        <span>▣</span>
+                        Business cards
+                    </div>
+
+                    <div class="visual-card visual-card-small card-cake">
+                        <span>♡</span>
+                        Cakes
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">What I offer</p>
+                    <h2>Choose the service you need</h2>
+
+                    <p>
+                        Each service is tailored to your style, requirements
+                        and business goals.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-number">01</div>
+
+                        <div class="service-icon">⌨</div>
+
+                        <h3>Bespoke websites</h3>
+
+                        <p>
+                            A personalised website created and coded around
+                            your brand, audience and goals.
+                        </p>
+
+                        <ul>
+                            <li>Custom colours and branding</li>
+                            <li>Mobile-friendly design</li>
+                            <li>Portfolio and business websites</li>
+                            <li>Contact and enquiry sections</li>
+                        </ul>
+
+                        <button
+                            class="button button-dark open-dialog"
+                            type="button"
+                            data-dialog="websiteDialog"
+                        >
+                            Request a website
+                        </button>
+                    </article>
+
+                    <article class="service-card featured-service">
+                        <div class="service-badge">Popular</div>
+                        <div class="service-number">02</div>
+
+                        <div class="service-icon">▣</div>
+
+                        <h3>Business cards</h3>
+
+                        <p>
+                            Professional business cards designed around your
+                            business identity and personal preferences.
+                        </p>
+
+                        <ul>
+                            <li>Single or double-sided designs</li>
+                            <li>Rounded or straight edges</li>
+                            <li>Different sizes and finishes</li>
+                            <li>Logo and layout assistance</li>
+                        </ul>
+
+                        <button
+                            class="button button-primary open-dialog"
+                            type="button"
+                            data-dialog="cardDialog"
+                        >
+                            Request business cards
+                        </button>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-number">03</div>
+
+                        <div class="service-icon">♡</div>
+
+                        <h3>Decorated cakes</h3>
+
+                        <p>
+                            Beautifully decorated cakes created for birthdays,
+                            celebrations and special occasions.
+                        </p>
+
+                        <ul>
+                            <li>Personalised designs</li>
+                            <li>Celebration cakes</li>
+                            <li>Colours and themes</li>
+                            <li>View examples on Instagram</li>
+                        </ul>
+
+                        <!-- Replace the link below with your cake Instagram -->
+                        <a
+                            class="button button-dark"
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Visit my cake page
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">My work</p>
+                    <h2>A space to showcase your creations</h2>
+
+                    <p>
+                        Replace these examples with photographs of your cakes,
+                        websites and business-card designs.
+                    </p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-item portfolio-web">
+                        <div class="portfolio-placeholder">
+                            <span>⌨</span>
+                            <small>Add a website screenshot here</small>
+                        </div>
+
+                        <div class="portfolio-caption">
+                            <p>Website design</p>
+                            <h3>Custom business website</h3>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item portfolio-card">
+                        <div class="portfolio-placeholder">
+                            <span>▣</span>
+                            <small>Add a business-card photo here</small>
+                        </div>
+
+                        <div class="portfolio-caption">
+                            <p>Print design</p>
+                            <h3>Personalised business cards</h3>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item portfolio-cake">
+                        <div class="portfolio-placeholder">
+                            <span>♡</span>
+                            <small>Add a cake photo here</small>
+                        </div>
+
+                        <div class="portfolio-caption">
+                            <p>Cake decorating</p>
+                            <h3>Celebration cake</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section process-section" id="process">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Simple process</p>
+                    <h2>How it works</h2>
+                </div>
+
+                <div class="process-grid">
+                    <article class="process-step">
+                        <span>1</span>
+                        <h3>Send your idea</h3>
+                        <p>
+                            Complete the relevant form and explain what you
+                            would like me to create.
+                        </p>
+                    </article>
+
+                    <article class="process-step">
+                        <span>2</span>
+                        <h3>Discuss the details</h3>
+                        <p>
+                            I will contact you to confirm your requirements,
+                            turnaround time and price.
+                        </p>
+                    </article>
+
+                    <article class="process-step">
+                        <span>3</span>
+                        <h3>Creation begins</h3>
+                        <p>
+                            Once everything has been agreed, I will begin
+                            creating your personalised order.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container contact-card">
+                <div>
+                    <p class="eyebrow">Let’s work together</p>
+
+                    <h2>Have a project in mind?</h2>
+
+                    <p>
+                        Choose one of my services and send me your idea. I will
+                        get back to you to discuss the next steps.
+                    </p>
+                </div>
+
+                <div class="contact-actions">
+                    <button
+                        class="button button-primary open-dialog"
+                        type="button"
+                        data-dialog="websiteDialog"
+                    >
+                        Website enquiry
+                    </button>
+
+                    <button
+                        class="button button-light open-dialog"
+                        type="button"
+                        data-dialog="cardDialog"
+                    >
+                        Business-card enquiry
+                    </button>
+
+                    <!-- Replace with your real email address -->
+                    <a
+                        class="text-link"
+                        href="mailto:your@email.com"
+                    >
+                        Or email: your@email.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="brand footer-brand" href="#home">
+                    <span class="brand-mark">YB</span>
+
+                    <span class="brand-text">
+                        <strong>Your Brand</strong>
+                        <small>Creative services</small>
+                    </span>
+                </a>
+
+                <p>
+                    Bespoke websites, business cards and cakes created with
+                    care.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Services</h3>
+                <a href="#services">Websites</a>
+                <a href="#services">Business cards</a>
+
+                <!-- Replace with your cake Instagram -->
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Cakes
+                </a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Contact</h3>
+
+                <!-- Replace these links -->
+                <a href="mailto:your@email.com">your@email.com</a>
+
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram
+                </a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>
+                © <span id="currentYear"></span> Your Brand.
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Website enquiry dialog -->
+    <dialog class="enquiry-dialog" id="websiteDialog">
+        <div class="dialog-header">
+            <div>
+                <p class="eyebrow">Website service</p>
+                <h2>Request a bespoke website</h2>
+            </div>
+
+            <button
+                class="close-dialog"
+                type="button"
+                aria-label="Close website enquiry form"
+            >
+                ×
+            </button>
+        </div>
+
+        <!--
+            Replace YOUR_FORM_ID with your form endpoint ID.
+            Example: https://formspree.io/f/abcdefgh
+        -->
+        <form
+            class="enquiry-form"
+            id="websiteForm"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            enctype="multipart/form-data"
+            data-drawing-canvas="websiteCanvas"
+        >
+            <input
+                type="hidden"
+                name="service"
+                value="Bespoke website enquiry"
+            >
+
+            <div class="form-grid">
+                <label>
+                    Full name
+                    <input
+                        type="text"
+                        name="name"
+                        autocomplete="name"
+                        required
+                    >
+                </label>
+
+                <label>
+                    Email address
+                    <input
+                        type="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </label>
+
+                <label>
+                    Telephone number
+                    <input
+                        type="tel"
+                        name="telephone"
+                        autocomplete="tel"
+                    >
+                </label>
+
+                <label>
+                    Business or brand name
+                    <input
+                        type="text"
+                        name="business_name"
+                    >
+                </label>
+
+                <label>
+                    Type of website
+                    <select name="website_type" required>
+                        <option value="">Select an option</option>
+                        <option>Business website</option>
+                        <option>Portfolio website</option>
+                        <option>Personal website</option>
+                        <option>Landing page</option>
+                        <option>Event website</option>
+                        <option>Online shop enquiry</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+
+                <label>
+                    Preferred number of pages
+                    <select name="number_of_pages">
+                        <option value="">Not sure yet</option>
+                        <option>1 page</option>
+                        <option>2–3 pages</option>
+                        <option>4–5 pages</option>
+                        <option>6 or more pages</option>
+                    </select>
+                </label>
+
+                <label>
+                    Preferred colour palette
+                    <input
+                        type="text"
+                        name="colour_palette"
+                        placeholder="For example: pink, cream and gold"
+                    >
+                </label>
+
+                <label>
+                    Desired turnaround
+                    <select name="turnaround">
+                        <option value="">Select an option</option>
+                        <option>As soon as possible</option>
+                        <option>Within 1 week</option>
+                        <option>Within 2 weeks</option>
+                        <option>Within 1 month</option>
+                        <option>Flexible</option>
+                    </select>
+                </label>
+            </div>
+
+            <fieldset>
+                <legend>Features you may need</legend>
+
+                <div class="checkbox-grid">
+                    <label class="checkbox-option">
+                        <input
+                            type="checkbox"
+                            name="features[]"
+                            value="Contact form"
+                        >
+                        Contact form
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input
+                            type="checkbox"
+                            name="features[]"
+                            value="Image gallery"
+                        >
+                        Image gallery
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input
+                            type="checkbox"
+                            name="features[]"
+                            value="Booking section"
+                        >
+                        Booking section
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input
+                            type="checkbox"
+                            name="features[]"
+                            value="Social-media links"
+                        >
+                        Social-media links
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input
+                            type="checkbox"
+                            name="features[]"
+                            value="Testimonials"
+                        >
+                        Testimonials
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input
+                            type="checkbox"
+                            name="features[]"
+                            value="Price list"
+                        >
+                        Price list
+                    </label>
+                </div>
+            </fieldset>
+
+            <label>
+                Tell me about your website
+                <textarea
+                    name="project_description"
+                    rows="6"
+                    required
+                    placeholder="Describe your business, what you want on the website, your preferred style, pages, wording and any special features."
+                ></textarea>
+            </label>
+
+            <label>
+                Websites you like
+                <textarea
+                    name="website_examples"
+                    rows="3"
+                    placeholder="Paste any website links or describe styles you like."
+                ></textarea>
+            </label>
+
+            <div class="upload-section">
+                <div>
+                    <h3>Upload your references</h3>
+
+                    <p>
+                        Upload a logo, drawing, screenshot, colour inspiration
+                        or website mock-up.
+                    </p>
+                </div>
+
+                <label class="file-upload">
+                    <span>Choose images</span>
+
+                    <input
+                        class="image-upload"
+                        type="file"
+                        name="website_references"
+                        accept="image/png,image/jpeg,image/webp"
+                        multiple
+                    >
+                </label>
+
+                <div
+                    class="image-preview"
+                    aria-live="polite"
+                ></div>
+            </div>
+
+            <div class="drawing-section">
+                <div class="drawing-heading">
+                    <div>
+                        <h3>Draw a rough idea</h3>
+
+                        <p>
+                            Use this box to sketch a possible page layout.
+                        </p>
+                    </div>
+
+                    <div class="drawing-controls">
+                        <label>
+                            Pen colour
+                            <input
+                                class="pen-colour"
+                                type="color"
+                                value="#25212b"
+                                aria-label="Choose pen colour"
+                            >
+                        </label>
+
+                        <button
+                            class="clear-canvas"
+                            type="button"
+                            data-canvas="websiteCanvas"
+                        >
+                            Clear drawing
+                        </button>
+                    </div>
+                </div>
+
+                <canvas
+                    id="websiteCanvas"
+                    width="900"
+                    height="450"
+                    aria-label="Drawing area for website mock-up"
+                ></canvas>
+            </div>
+
+            <label class="consent-option">
+                <input type="checkbox" required>
+
+                <span>
+                    I confirm that the information provided is correct and
+                    understand that submitting this form is an enquiry, not a
+                    confirmed booking.
+                </span>
+            </label>
+
+            <button class="button button-primary submit-button" type="submit">
+                Send website enquiry
+            </button>
+
+            <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+    </dialog>
+
+    <!-- Business-card enquiry dialog -->
+    <dialog class="enquiry-dialog" id="cardDialog">
+        <div class="dialog-header">
+            <div>
+                <p class="eyebrow">Business-card service</p>
+                <h2>Request business cards</h2>
+            </div>
+
+            <button
+                class="close-dialog"
+                type="button"
+                aria-label="Close business-card enquiry form"
+            >
+                ×
+            </button>
+        </div>
+
+        <!-- Replace YOUR_FORM_ID with your form endpoint ID -->
+        <form
+            class="enquiry-form"
+            id="cardForm"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            enctype="multipart/form-data"
+            data-drawing-canvas="cardCanvas"
+        >
+            <input
+                type="hidden"
+                name="service"
+                value="Business-card enquiry"
+            >
+
+            <div class="form-grid">
+                <label>
+                    Full name
+                    <input
+                        type="text"
+                        name="name"
+                        autocomplete="name"
+                        required
+                    >
+                </label>
+
+                <label>
+                    Email address
+                    <input
+                        type="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </label>
+
+                <label>
+                    Telephone number
+                    <input
+                        type="tel"
+                        name="telephone"
+                        autocomplete="tel"
+                    >
+                </label>
+
+                <label>
+                    Business name
+                    <input
+                        type="text"
+                        name="business_name"
+                        required
+                    >
+                </label>
+
+                <label>
+                    Number of cards
+                    <select name="quantity" required>
+                        <option value="">Select a quantity</option>
+                        <option>50 cards</option>
+                        <option>100 cards</option>
+                        <option>250 cards</option>
+                        <option>500 cards</option>
+                        <option>Other quantity</option>
+                    </select>
+                </label>
+
+                <label>
+                    Card sides
+                    <select name="card_sides" required>
+                        <option value="">Select an option</option>
+                        <option>Single-sided</option>
+                        <option>Double-sided</option>
+                        <option>Not sure</option>
+                    </select>
+                </label>
+
+                <label>
+                    Corners
+                    <select name="corners">
+                        <option value="">Select an option</option>
+                        <option>Straight edges</option>
+                        <option>Rounded edges</option>
+                        <option>Not sure</option>
+                    </select>
+                </label>
+
+                <label>
+                    Card size
+                    <select name="card_size">
+                        <option value="">Select an option</option>
+                        <option>Standard UK size — 85 × 55 mm</option>
+                        <option>Square</option>
+                        <option>Mini card</option>
+                        <option>Custom size</option>
+                        <option>Not sure</option>
+                    </select>
+                </label>
+
+                <label>
+                    Card material
+                    <select name="card_material">
+                        <option value="">Select an option</option>
+                        <option>Standard card</option>
+                        <option>Thick card</option>
+                        <option>Recycled card</option>
+                        <option>Not sure</option>
+                    </select>
+                </label>
+
+                <label>
+                    Finish
+                    <select name="finish">
+                        <option value="">Select an option</option>
+                        <option>Matt</option>
+                        <option>Glossy</option>
+                        <option>Laminated</option>
+                        <option>Uncoated</option>
+                        <option>Not sure</option>
+                    </select>
+                </label>
+
+                <label>
+                    Preferred colours
+                    <input
+                        type="text"
+                        name="colours"
+                        placeholder="For example: black, white and gold"
+                    >
+                </label>
+
+                <label>
+                    Desired turnaround
+                    <select name="turnaround">
+                        <option value="">Select an option</option>
+                        <option>As soon as possible</option>
+                        <option>Within 1 week</option>
+                        <option>Within 2 weeks</option>
+                        <option>Flexible</option>
+                    </select>
+                </label>
+            </div>
+
+            <label>
+                Information for the front of the card
+                <textarea
+                    name="front_information"
+                    rows="4"
+                    required
+                    placeholder="For example: business name, logo, slogan or your name."
+                ></textarea>
+            </label>
+
+            <label>
+                Information for the back of the card
+                <textarea
+                    name="back_information"
+                    rows="4"
+                    placeholder="For example: telephone number, email, website, Instagram and services."
+                ></textarea>
+            </label>
+
+            <label>
+                Tell me about your preferred design
+                <textarea
+                    name="design_description"
+                    rows="5"
+                    required
+                    placeholder="Describe the style, colours, layout, fonts and overall appearance you would like."
+                ></textarea>
+            </label>
+
+            <div class="upload-section">
+                <div>
+                    <h3>Upload your references</h3>
+
+                    <p>
+                        Upload your logo, rough design, drawing or examples of
+                        business cards you like.
+                    </p>
+                </div>
+
+                <label class="file-upload">
+                    <span>Choose images</span>
+
+                    <input
+                        class="image-upload"
+                        type="file"
+                        name="business_card_references"
+                        accept="image/png,image/jpeg,image/webp"
+                        multiple
+                    >
+                </label>
+
+                <div
+                    class="image-preview"
+                    aria-live="polite"
+                ></div>
+            </div>
+
+            <div class="drawing-section">
+                <div class="drawing-heading">
+                    <div>
+                        <h3>Draw a card mock-up</h3>
+
+                        <p>
+                            Sketch where you would like your logo and details.
+                        </p>
+                    </div>
+
+                    <div class="drawing-controls">
+                        <label>
+                            Pen colour
+                            <input
+                                class="pen-colour"
+                                type="color"
+                                value="#25212b"
+                                aria-label="Choose pen colour"
+                            >
+                        </label>
+
+                        <button
+                            class="clear-canvas"
+                            type="button"
+                            data-canvas="cardCanvas"
+                        >
+                            Clear drawing
+                        </button>
+                    </div>
+                </div>
+
+                <canvas
+                    id="cardCanvas"
+                    width="900"
+                    height="450"
+                    aria-label="Drawing area for business-card mock-up"
+                ></canvas>
+            </div>
+
+            <label class="consent-option">
+                <input type="checkbox" required>
+
+                <span>
+                    I confirm that the information provided is correct and
+                    understand that submitting this form is an enquiry, not a
+                    confirmed booking.
+                </span>
+            </label>
+
+            <button class="button button-primary submit-button" type="submit">
+                Send business-card enquiry
+            </button>
+
+            <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+    </dialog>
+</body>
+</html>
